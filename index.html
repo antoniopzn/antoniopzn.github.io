@@ -1,7 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Antonio Pazini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#111;color:#ccc;font-family:'Inter',sans-serif;font-size:15px;line-height:1.7;max-width:680px;margin:0 auto;padding:3rem 1.5rem}
+a{color:#4f9eff;text-decoration:none}
+a:hover{text-decoration:underline}
+
+header{margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid #222}
+h1{font-size:1.6rem;font-weight:600;color:#eee;margin-bottom:.3rem}
+.sub{font-family:'JetBrains Mono',monospace;font-size:12px;color:#666}
+
+h2{font-size:.85rem;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.25rem;margin-top:2.5rem}
+
+.exp+.exp{margin-top:1.75rem;padding-top:1.75rem;border-top:1px solid #1e1e1e}
+.exp-row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.3rem}
+.exp-role{font-weight:500;color:#ddd;font-size:15px}
+.exp-period{font-family:'JetBrains Mono',monospace;font-size:11px;color:#555;white-space:nowrap}
+.exp-company{font-size:13px;color:#666;margin-bottom:.5rem}
+.exp-desc{font-size:14px;color:#888}
+
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
+.tag{font-family:'JetBrains Mono',monospace;font-size:10px;color:#666;border:1px solid #2a2a2a;padding:.2rem .5rem}
+
+.stack{display:flex;flex-wrap:wrap;gap:.5rem}
+
+.proj+.proj{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #1e1e1e}
+.proj-name{font-weight:500;color:#ddd;margin-bottom:.3rem}
+.proj-desc{font-size:14px;color:#888}
+
+footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid #222;font-size:13px;color:#555;display:flex;justify-content:space-between;align-items:center}
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<header>
+  <h1>Antonio Pazini</h1>
+  <p class="sub">Desenvolvedor Node.js · Cambará, PR</p>
+</header>
+
+<p style="color:#999;font-size:15px">Desenvolvedor backend com foco em integrações, automações e APIs. Trabalho desde o código até o deploy em produção.</p>
+
+<h2>Experiência</h2>
+
+<div class="exp">
+  <div class="exp-row">
+    <span class="exp-role">Desenvolvedor Pleno</span>
+    <span class="exp-period">2022 — presente</span>
+  </div>
+  <p class="exp-company">Zenvia</p>
+  <p class="exp-desc">Desenvolvimento de chatbots para WhatsApp e Instagram, integrações com ferramentas internas e funcionalidades em Node.js. AWS — S3, Lambda, EC2, API Gateway.</p>
+  <div class="tags">
+    <span class="tag">Node.js</span>
+    <span class="tag">AWS</span>
+    <span class="tag">WhatsApp API</span>
+    <span class="tag">Chatbots</span>
+  </div>
+</div>
+
+<div class="exp">
+  <div class="exp-row">
+    <span class="exp-role">Analista de Suporte</span>
+    <span class="exp-period">2019 — 2022</span>
+  </div>
+  <p class="exp-company">Certano Comercial de Alimentos</p>
+  <p class="exp-desc">Administração de servidores Windows, redes e Active Directory. Desenvolvimento interno em Java e GoLang.</p>
+  <div class="tags">
+    <span class="tag">Windows Server</span>
+    <span class="tag">Linux</span>
+    <span class="tag">Java</span>
+    <span class="tag">GoLang</span>
+  </div>
+</div>
+
+<h2>Stack</h2>
+<div class="stack">
+  <span class="tag">Node.js</span>
+  <span class="tag">JavaScript</span>
+  <span class="tag">TypeScript</span>
+  <span class="tag">AWS</span>
+  <span class="tag">Docker</span>
+  <span class="tag">PostgreSQL</span>
+  <span class="tag">Oracle SQL</span>
+  <span class="tag">Webhooks</span>
+  <span class="tag">Discord.js</span>
+  <span class="tag">Puppeteer</span>
+  <span class="tag">Supabase</span>
+  <span class="tag">Linux</span>
+  <span class="tag">Traefik</span>
+  <span class="tag">Cloudflare</span>
+  <span class="tag">Fly.io</span>
+  <span class="tag">n8n</span>
+</div>
+
+<h2>Projetos</h2>
+
+<div class="proj">
+  <p class="proj-name">Pontuou!</p>
+  <p class="proj-desc">PWA de controle de placar para jogos de mesa. Persistência dual com localStorage e sync via Supabase. Backend Node.js no Fly.io.</p>
+  <div class="tags" style="margin-top:.6rem">
+    <span class="tag">Node.js</span><span class="tag">PWA</span><span class="tag">Supabase</span><span class="tag">Fly.io</span>
+  </div>
+</div>
+
+<div class="proj">
+  <p class="proj-name">Chat Unificado — E-commerce</p>
+  <p class="proj-desc">Bridge Node.js centralizando atendimento do Shopee e TikTok Shop no Zenvia Customer Cloud via webhooks em tempo real.</p>
+  <div class="tags" style="margin-top:.6rem">
+    <span class="tag">Node.js</span><span class="tag">Webhooks</span><span class="tag">Shopee</span><span class="tag">Zenvia</span>
+  </div>
+</div>
+
+<div class="proj">
+  <p class="proj-name">Monitor de Preços</p>
+  <p class="proj-desc">Monitoramento de preços de ingressos via Puppeteer com alertas automáticos no Telegram.</p>
+  <div class="tags" style="margin-top:.6rem">
+    <span class="tag">Puppeteer</span><span class="tag">Node.js</span><span class="tag">Telegram API</span>
+  </div>
+</div>
+
+<div class="proj">
+  <p class="proj-name">FiveM Scripts & Sistemas</p>
+  <p class="proj-desc">Sistemas para servidor FiveM/vRP: bot Discord de whitelist em TypeScript + MariaDB, expiração de VIPs, entrega automatizada e voz com NPCs via STT/TTS.</p>
+  <div class="tags" style="margin-top:.6rem">
+    <span class="tag">TypeScript</span><span class="tag">Lua</span><span class="tag">MariaDB</span><span class="tag">Discord.js</span>
+  </div>
+</div>
+
+<h2>Contato</h2>
+<p style="color:#999;font-size:14px"><a href="https://linkedin.com/in/antoniopazini" target="_blank" rel="noopener">linkedin.com/in/antoniopazini</a></p>
+
+<footer>
+  <span>Antonio Pazini</span>
+  <span>© 2025</span>
+</footer>
+
 </body>
 </html>
